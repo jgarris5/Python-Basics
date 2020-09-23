@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+def call ():
+
+    """Jada Garrison
+    DSCI 15310
+    Section 002
+    17 September 2019"""
+
+print(call.__doc__)
+    
+import math
+
+def PA (fav):
+   """Function name of "PA" a refference to Programming Assignment1. Accepts 1
+   argument and returns the 4 values from PA1 as a nested tuple"""
+    s = fav - 10
+    #assigning "s" as the output variable of fav-10
+    d = fav / 12
+    #assigning "d" as the output variable of fav/12
+    sq = fav **2
+    #assigning "sp" as the output variable of fav**2
+    y = s+d+sq
+    #assigning "y" as the output variable of the sum of s, d, sq
+    return s, d, sq, y
+    #returning all outputs of all  computations
+print (PA.__doc__)
+#displaying content of docstring to console
+print ('test1')
+
+def test1 (5):
+     """Function name of "test1" tests the accuracy of function PA"""
+    h = 5 - 10
+    j = 5 / 12
+    k = 5 **2
+    l = s+d+sq
+    return h, j, k, l
+print (h, j, k, l)
+
+print ('test2')
+def test2 (10):
+   """Function name of "test2" tests the accuracy of function PA"""
+    aa = 10 - 10
+    bb = 10 / 12
+    cc = 10 **2
+    dd = s+d+sq
+    return aa, bb, cc, dd
+print (aa, bb, cc, dd)
+
+def comp (a, b, c):
+    """Function named "comp" accepts 3 arguments. Returns the values
+    from PA 1"""
+    g = PA(a)
+    # g is the output of function PA with a given #, "a"
+    h = PA(b)
+    # h is the output of function PA with a given #, "b"
+    j = PA(c)
+    # j is the output of function PA with a given #, "c"
+    return g, h, j
+    #returning the outputs of function PA with 3 different inputs
+print(comp.__doc__)
+# printing comp docstring to the console
+
+def test3 (l, m, n):
+    """Function name of "test3" tests the accuracy of function comp"""
+    i = PA(l)
+    f = PA(m)
+    k = PA(n)
+    return i, f, k
+print (i, f, k)
+
+def test4 (w, q, r):
+    """Function name of "test4" tests the accuracy of function comp"""
+    ii = PA(w)
+    ff = PA(q)
+    kk = PA(r)
+    return ii, ff, kk
+print (ii, ff, kk)
+
+def avcos (x):
+    """avcos function returns the absolute value of the exponential of the 
+    cosine of any # """
+    v = abs(math.exp(math.cos(x)))
+    #Usong the math module to comput the absolute value of the exponential of 
+    #the cosine of any given #, x
+    return v
+    #returns the answer, v, to the euqation 
+print(avcos.__doc__)
+#Prints the avcos ddocstring to the console 
+
+def test5 (2):
+        """Function name of "test5" tests the accuracy of function avcos"""
+    e = abs(math.exp(math.cos(2)))
+    return e
+print (e)
+
+def test6 (7):
+        """Function name of "test6" tests the accuracy of function avcos"""
+    t = abs(math.exp(math.cos(7)))
+    return t
+print (t)
